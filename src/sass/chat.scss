@@ -1,0 +1,29 @@
+.chat-container {
+    background-color: #F4F4F4;
+    padding-top: 20px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.message-container {
+    display: block;
+    overflow: auto;
+
+    .message {
+        background-color: #FFF;
+        padding: 12px;
+        display: inline-block;
+        max-width: 80%;
+
+        &.mine {
+            background-color: #25ABB0;
+            float: right;
+            color: white;
+            font-style: italic;
+
+        }
+    }
+}
+

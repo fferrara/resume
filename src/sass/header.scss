@@ -1,0 +1,35 @@
+.header {
+
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+
+    ul > li {
+        border: 0;
+    }
+}
+
+.my-picture {
+    max-width: 100px;
+}
+
+
+
+.icon {
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+
+    &.mail-icon {
+        background-color: #ee7565;
+    }
+
+    &.location-icon {
+        background-color: #EEA14B;
+    }
+
+    &.phone-icon {
+        background-color: #88C057;
+    }
+}
+

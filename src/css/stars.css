@@ -1,0 +1,36 @@
+/**
+Credits to James Barnett https://codepen.io/jamesbarnett
+ */
+
+/****** Style Star Rating Widget *****/
+
+.message-container > .message.stars {
+    border: none;
+    float: left;
+}
+
+.stars > .skill {
+    white-space: nowrap;
+    padding: 0 12px;
+}
+
+.skill > span {
+    display: inline-block;
+    min-width: 50%;
+}
+
+.skill > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.skill > .half:before {
+    content: "\f089";
+}
+
+.skill > label {
+    color: #FFD700;
+}

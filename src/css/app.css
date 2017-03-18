@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto:400,400i,700,900");
+.header {
+  font-family: 'Raleway', sans-serif;
+  padding: 20px; }
+  .header ul > li {
+    border: 0; }
+
+.my-picture {
+  max-width: 100px; }
+
+.icon {
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px; }
+  .icon.mail-icon {
+    background-color: #ee7565; }
+  .icon.location-icon {
+    background-color: #EEA14B; }
+  .icon.phone-icon {
+    background-color: #88C057; }
+
+.chat-container {
+  background-color: #F4F4F4;
+  padding-top: 20px; }
+
+ul {
+  padding-left: 0; }
+
+.message-container {
+  display: block;
+  overflow: auto; }
+  .message-container .message {
+    background-color: #FFF;
+    padding: 12px;
+    display: inline-block;
+    max-width: 80%; }
+    .message-container .message.mine {
+      background-color: #25ABB0;
+      float: right;
+      color: white;
+      font-style: italic; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 750px; } }
