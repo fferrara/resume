@@ -1,9 +1,17 @@
 @import "header";
 @import "chat";
+@import "stars";
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:400,400i,700,900');
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+q {
+    font-style: italic;
+    background: #eee;
+    padding: 0 3px;
+    color: #c76c0c;
 }
 
 @media (min-width: 800px) {

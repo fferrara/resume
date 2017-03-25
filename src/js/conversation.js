@@ -34,7 +34,10 @@ CONVERSATION = [
         "message": "Then, I spent 1 year at the Universidade Federal do Espirito Santo, in Vitória, Brazil."
     },
     {
-        "message": "Finally, I took my <strong>Master's degree</strong> (still Computer Engineering) in the Politecnico in 2015. FInal grade: 107/110."
+        "message": "Finally, I took my <strong>Master's degree</strong> (still Computer Engineering) in the Politecnico in 2015. Final grade: 107/110."
+    },
+    {
+        "message": "Here's <a href=\"https://www.amazon.com/SMAD-System-Multimodal-Assistive-Domotics/dp/3659829609\">my master thesis</a>, btw."
     },
     {
         "message": "Fine. What about your <strong>work experience</strong>?",
@@ -89,8 +92,15 @@ CONVERSATION = [
         "message": "About that, since a picture is worth a thousand words:"
     },
     {
-        "message": ["Machine learning", "Python", "Javascript", "Java EE", "PHP/Zend", "TDD"],
-        "stars": [4.5, 4.5, 4.5, 4, 4, 4]
+        "message": ["Machine learning", "Python", "Javascript", "Java EE", "PHP/Zend", "TDD", "Agile (Scrum)"],
+        "stars": [4.5, 4.5, 4.5, 4, 4, 4, 4]
+    },
+    {
+        "message": "Less tech, still worthy:"
+    },
+    {
+        "message": ["Agile (Scrum)", "Design thinking", "Scientific method", "UX",  "Ethics"],
+        "stars": [4, 4, 4, 3.5, 4]
     },
     {
         "message": " I'm a voracious learner too. Maybe we can talk about it later on."
@@ -106,8 +116,23 @@ CONVERSATION = [
         "message": "There is my analytical self (<em>I’m a computer scientist, after all</em>). I’m reasonable, logical, assertive and dedicated."
     },
     {
-        "message": "Then we have my creative side, which makes me curious, intuitive, different and friendly."
+        "message": "Then we have my creative side, which makes me curious, intuitive, different and friendly. <q>An open mind but not an empty head</q>"
     },
-
+    {
+        "message": "I take data-driven technical and business decision, while I trust my instinct and empathy with respect to colleagues and end users."
+    },
+    {
+        "message": "Ok, right. Can you give some examples of what you learned during the last 6 months?",
+        "mine": true
+    },
+    {
+        "message": "I'd been playing around with some very interesting technologies."
+    },
+    {
+        "message": "Angular 2, Elasticsearch and Kibana, reactive programming"
+    },
+    {
+        "message": "I've also studied gamification, interaction design, "
+    }
 ];
 

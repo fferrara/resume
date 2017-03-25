@@ -4,6 +4,8 @@
   padding: 20px; }
   .header ul > li {
     border: 0; }
+  .header .list-group {
+    margin-bottom: 0; }
 
 .my-picture {
   max-width: 100px; }
@@ -12,37 +14,77 @@
   padding: 10px;
   border-radius: 50%;
   color: white;
-  margin-right: 10px; }
+  margin-right: 10px;
+  width: 34px;
+  line-height: 14px;
+  text-align: center; }
   .icon.mail-icon {
     background-color: #ee7565; }
   .icon.location-icon {
     background-color: #EEA14B; }
   .icon.phone-icon {
     background-color: #88C057; }
+  .icon.linkedin-icon {
+    background-color: #0077B5; }
 
 .chat-container {
   background-color: #F4F4F4;
-  padding-top: 20px; }
+  padding-top: 25px; }
 
 ul {
   padding-left: 0; }
 
 .message-container {
   display: block;
-  overflow: auto; }
-  .message-container .message {
+  clear: both; }
+  .message-container p.message {
     background-color: #FFF;
     padding: 12px;
     display: inline-block;
-    max-width: 80%; }
-    .message-container .message.mine {
+    max-width: 80%;
+    position: relative;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 0 5px 0 5px; }
+    .message-container p.message.mine {
       background-color: #25ABB0;
       float: right;
       color: white;
       font-style: italic; }
 
+/**
+Credits to James Barnett https://codepen.io/jamesbarnett
+ */
+/****** Style Star Rating Widget *****/
+.message-container > .message.stars {
+  border: none;
+  float: left; }
+
+.stars > .skill {
+  white-space: nowrap;
+  padding: 0 12px; }
+  .stars > .skill > span {
+    display: inline-block;
+    min-width: 50%;
+    margin-right: 20px; }
+  .stars > .skill > label {
+    color: #FFD700; }
+    .stars > .skill > label:before {
+      margin: 5px;
+      font-size: 1.25em;
+      font-family: FontAwesome;
+      display: inline-block;
+      content: "\f005"; }
+  .stars > .skill > .half:before {
+    content: "\f089"; }
+
 body {
   font-family: 'Roboto', sans-serif; }
+
+q {
+  font-style: italic;
+  background: #eee;
+  padding: 0 3px;
+  color: #c76c0c; }
 
 @media (min-width: 800px) {
   .container {

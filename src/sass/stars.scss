@@ -1,0 +1,39 @@
+/**
+Credits to James Barnett https://codepen.io/jamesbarnett
+ */
+
+/****** Style Star Rating Widget *****/
+
+.message-container > .message.stars {
+    border: none;
+    float: left;
+}
+
+.stars {
+    > .skill {
+        white-space: nowrap;
+        padding: 0 12px;
+
+        > span {
+            display: inline-block;
+            min-width: 50%;
+            margin-right: 20px;
+        }
+
+        > label {
+            color: #FFD700;
+
+            &:before {
+                margin: 5px;
+                font-size: 1.25em;
+                font-family: FontAwesome;
+                display: inline-block;
+                content: "\f005";
+            }
+        }
+
+        > .half:before {
+            content: "\f089";
+        }
+    }
+}

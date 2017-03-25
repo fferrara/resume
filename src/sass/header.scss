@@ -6,6 +6,10 @@
     ul > li {
         border: 0;
     }
+
+    .list-group {
+        margin-bottom: 0;
+    }
 }
 
 .my-picture {
@@ -19,6 +23,9 @@
     border-radius: 50%;
     color: white;
     margin-right: 10px;
+    width: 34px;
+    line-height: 14px;
+    text-align: center;
 
     &.mail-icon {
         background-color: #ee7565;
@@ -30,6 +37,10 @@
 
     &.phone-icon {
         background-color: #88C057;
+    }
+
+    &.linkedin-icon {
+        background-color: #0077B5;
     }
 }
 

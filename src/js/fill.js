@@ -2,34 +2,6 @@
  * Created by flavio on 12/03/2017.
  */
 
-function createList() {
-    var container = document.getElementsByClassName('chat-container')[0];
-    var ul=document.createElement('ul');
-    ul.setAttribute('class', 'container');
-
-    CONVERSATION.forEach(function (message){
-        var li = document.createElement('li');
-        li.setAttribute('class', 'message-container');
-        var p = document.createElement('p');
-        p.setAttribute('class', 'message');
-
-        if (message.stars){
-            p.setAttribute('class', 'message stars');
-            p.innerHTML = createStars(message);
-        }  else {
-            p.innerHTML = message.message;
-
-            if (message.mine) p.setAttribute('class',  p.getAttribute('class') + ' mine');
-
-        }
-
-        li.appendChild(p);
-        ul.appendChild(li);
-    });
-
-    container.appendChild(ul);
-}
-
 function createStars(message) {
     var items = [];
 
@@ -38,11 +10,11 @@ function createStars(message) {
         var count = message.stars[skill];
 
         var container = document.createElement('div');
-        container.className = 'skill'
+        container.className = 'skill';
         var star;
 
         var label = document.createElement('span');
-        label.className = 'stars-name'
+        label.className = 'stars-name';
         label.innerHTML = name;
         container.appendChild(label);
 
@@ -67,8 +39,39 @@ function createStars(message) {
     }
 
     return items.map(function (item){
-        return item.outerHTML
+        return item.outerHTML;
     }).join('');
+}
+
+function createList() {
+    var container = document.getElementsByClassName('chat-container')[0];
+    var ul=document.createElement('ul');
+    ul.setAttribute('class', 'container');
+
+    CONVERSATION.forEach(function (message){
+        var li = document.createElement('li');
+        li.setAttribute('class', 'message-container');
+        var p = document.createElement('p');
+        p.setAttribute('class', 'message');
+
+        if (message.stars){
+            p.setAttribute('class', 'message stars');
+            p.innerHTML = createStars(message);
+        }  else {
+            p.innerHTML = message.message;
+
+            if (message.mine) {
+                p.setAttribute('class',  p.getAttribute('class') + ' mine');
+                li.setAttribute('class',  li.getAttribute('class') + ' mine');
+            }
+
+        }
+
+        li.appendChild(p);
+        ul.appendChild(li);
+    });
+
+    container.appendChild(ul);
 }
 
 document.addEventListener("DOMContentLoaded", createList);
