@@ -10,6 +10,39 @@
 .my-picture {
   max-width: 100px; }
 
+.my-description {
+  display: inline-block; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .icon {
   padding: 10px;
   border-radius: 50%;
@@ -51,6 +84,9 @@ ul {
       color: white;
       font-style: italic; }
 
+.emoji {
+  width: 20px; }
+
 /**
 Credits to James Barnett https://codepen.io/jamesbarnett
  */
@@ -61,7 +97,8 @@ Credits to James Barnett https://codepen.io/jamesbarnett
 
 .stars > .skill {
   white-space: nowrap;
-  padding: 0 12px; }
+  padding: 0 12px;
+  margin-right: 10px; }
   .stars > .skill > span {
     display: inline-block;
     min-width: 50%;

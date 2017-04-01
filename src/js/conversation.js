@@ -2,8 +2,7 @@
  * Created by flavio on 12/03/2017.
  */
 
-var CONVERSATION;
-CONVERSATION = [
+const CONVERSATION = [
     {
         "message": "Hey there! How are you going? Welcome to my resume!"
     },
@@ -15,7 +14,10 @@ CONVERSATION = [
         "message": "The first-of-its-kind <strong>conversational resume</strong>."
     },
     {
-        "message": "An unusual resume, since I'm an unusual professional."
+        "message": "Yeah, I know. A pretty unusual resume."
+    },
+    {
+        "message": "But great companies don't want to hire average professionals. So, why bother with average resumes?"
     },
     {
         "message": "But don't worry, it's even more informative than the average resume."
@@ -37,7 +39,7 @@ CONVERSATION = [
         "message": "Finally, I took my <strong>Master's degree</strong> (still Computer Engineering) in the Politecnico in 2015. Final grade: 107/110."
     },
     {
-        "message": "Here's <a href=\"https://www.amazon.com/SMAD-System-Multimodal-Assistive-Domotics/dp/3659829609\">my master thesis</a>, btw."
+        "message": "Here's <a href=\"https://www.amazon.com/SMAD-System-Multimodal-Assistive-Domotics/dp/3659829609\">my master thesis</a>, btw. I developed a domotic system for people with motor disabilities."
     },
     {
         "message": "Fine. What about your <strong>work experience</strong>?",
@@ -50,7 +52,10 @@ CONVERSATION = [
         "message": "It was a cool R&D project called <a href=\"https://www.pic4turtle.com\">Pic4Turtle</a>, with the aim of classifying sea turtle species in pictures."
     },
     {
-        "message": "I tackled the problem using <strong>machine learning</strong> with optimal results (nearly 90% accuracy)."
+        "message": "I tackled the problem using <strong>deep learning</strong> (convolutional neural networks) to transform images and make them easier to classify."
+    },
+    {
+        "message": "Using a pretty challenging dataset, with real-world pictures, the model achieved optimal results (nearly 90% accuracy)."
     },
     {
         "message": "Right after that, I became a full-stack developer for the whole project."
@@ -73,6 +78,9 @@ CONVERSATION = [
         "mine": true
     },
     {
+        "message": "I'm glad you asked! It has been an amazing journey."
+    },
+    {
         "message": "First of all, solving interesting and non-trivial problems without supervision. I love to solve problems with great results!"
     },
     {
@@ -92,15 +100,15 @@ CONVERSATION = [
         "message": "About that, since a picture is worth a thousand words:"
     },
     {
-        "message": ["Machine learning", "Python", "Javascript", "Java EE", "PHP/Zend", "TDD", "Agile (Scrum)"],
-        "stars": [4.5, 4.5, 4.5, 4, 4, 4, 4]
+        "message": ["Machine learning", "Software engineering", "Python", "Angular", "Java EE", "TDD", "DevOps"],
+        "stars": [4.5, 4.5, 4.5, 4.5, 4, 4, 4]
     },
     {
         "message": "Less tech, still worthy:"
     },
     {
-        "message": ["Agile (Scrum)", "Design thinking", "Scientific method", "UX",  "Ethics"],
-        "stars": [4, 4, 4, 3.5, 4]
+        "message": ["Data science", "Agile (Scrum)", "Design thinking", "Scientific method", "UX",  "Ethics"],
+        "stars": [4.5, 4, 4, 4, 3.5, 4]
     },
     {
         "message": " I'm a voracious learner too. Maybe we can talk about it later on."
@@ -126,13 +134,12 @@ CONVERSATION = [
         "mine": true
     },
     {
-        "message": "I'd been playing around with some very interesting technologies."
+        "message": "I'd been playing around with some very interesting technologies. " +
+        "<a href='https://angular.io/'>Angular 2</a>, <a href='http://reactivex.io/'>reactive programming</a>, " +
+        "<a href='https://www.elastic.co/products/elasticsearch'>Elasticsearch and Kibana</a>, just to name the most exciting ones."
     },
     {
-        "message": "Angular 2, Elasticsearch and Kibana, reactive programming"
-    },
-    {
-        "message": "I've also studied gamification, interaction design, "
+        "message": "I've also studied gamification, interaction design... and spanish <img class='emoji' alt='wink' src='https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f609.png'>"
     }
 ];
 

@@ -11,7 +11,7 @@
     "nonbsp": true,
     "nonew": true,
     "undef": true,
-    "unused": true,
+    "unused": false,
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -29,6 +29,6 @@
     "jquery": true,
     "node": true,
 
-    "globals": { "CONVERSATION": true }
+    "globals": { "CONVERSATION": true, "Typed": true }
 
 }

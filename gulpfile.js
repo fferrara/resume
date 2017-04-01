@@ -70,7 +70,6 @@ gulp.task('clean', function (done) {
 
 gulp.task('copy', [
     'copy:.htaccess',
-    'copy:index.html',
     'copy:license',
     'copy:misc'
 ]);
@@ -78,11 +77,6 @@ gulp.task('copy', [
 gulp.task('copy:.htaccess', function () {
     return gulp.src('node_modules/apache-server-configs/dist/.htaccess')
         .pipe(plugins.replace(/# ErrorDocument/g, 'ErrorDocument'))
-        .pipe(gulp.dest(dirs.dist));
-});
-
-gulp.task('copy:index.html', function () {
-    return gulp.src(dirs.src + '/index.html')
         .pipe(gulp.dest(dirs.dist));
 });
 
@@ -140,6 +134,13 @@ gulp.task('copy:misc', function () {
     }).pipe(gulp.dest(dirs.dist));
 });
 
+gulp.task('bower_components', function () {
+    return gulp.src([
+        'bower_components/typed.js/dist/typed.min.js',
+    ])
+        .pipe(gulp.dest(dirs.dist + '/js/vendor/'));
+});
+
 gulp.task('lint:js', function () {
     return gulp.src([
         'gulpfile.js',
@@ -149,6 +150,17 @@ gulp.task('lint:js', function () {
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('jshint-stylish'))
         .pipe(plugins.jshint.reporter('fail'));
+});
+
+gulp.task('index', function () {
+    gulp.src(dirs.src + '/index.html')
+        .pipe(plugins.replace('../bower_components/typed.js/dist/', 'js/vendor/'))
+        .pipe(plugins.replace(/href=".*bootstrap.*css"/g, 'href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"'))
+        .pipe(plugins.replace(/href=".*font-awesome.*css"/g, 'href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"'))
+        .pipe(plugins.replace(/href=".*normalize.*css"/g, 'href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css"'))
+        .pipe(plugins.replace(/href=".*main.css"/g, ''))
+        .pipe(plugins.replace('app.css', 'style.'+myPackage.version+'.css'))
+        .pipe(gulp.dest(dirs.dist));
 });
 
 
@@ -167,7 +179,9 @@ gulp.task('archive', function (done) {
 gulp.task('build', function (done) {
     runSequence(
         ['clean', 'lint:js', 'css'],
+        'bower_components',
         'copy',
+        'index',
         done);
 });
 

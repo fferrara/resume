@@ -1,0 +1,21 @@
+{
+  "name": "fferrara-resume",
+  "description": "My conversational resume",
+  "main": "index.html",
+  "authors": [
+    "Flavio Ferrara <femferrara@gmail.com>"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt"
+  },
+  "homepage": "https://github.com/fferrara/resume",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
