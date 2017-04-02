@@ -127,7 +127,7 @@ const CONVERSATION = [
         "message": "Then we have my creative side, which makes me curious, intuitive, different and friendly. <q>An open mind but not an empty head</q>"
     },
     {
-        "message": "I take data-driven technical and business decision, while I trust my instinct and empathy with respect to colleagues and end users."
+        "message": "I take data-driven technical and business decision, while I trust my instinct and empathy when it comes to colleagues and end-users."
     },
     {
         "message": "Ok, right. Can you give some examples of what you learned during the last 6 months?",
@@ -140,6 +140,16 @@ const CONVERSATION = [
     },
     {
         "message": "I've also studied gamification, interaction design... and spanish <img class='emoji' alt='wink' src='https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f609.png'>"
-    }
+    },
+    {
+        "message": "That's all, I think. How can I get in touch with you?",
+        "mine": true
+    },
+    {
+        "message": "Just drop me a line on <a href='javascript:void(0);' onclick='showEmail(this)'>this email</a> or contact me on <a href='https://www.linkedin.com/in/femferrara'>Linkedin</a>."
+    },
+    {
+        "message": "Thanks for reading this! I look forward to hear from you."
+    },
 ];
 

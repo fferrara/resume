@@ -7,3 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         typeSpeed: 0
     });
 });
+
+function showEmail(el){
+    el.outerHTML = '<em>femferrara@gmail.com</em>';
+}
