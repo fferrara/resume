@@ -14,16 +14,17 @@ const CONVERSATION = [
         "message": "The first-of-its-kind <strong>conversational resume</strong>."
     },
     {
-        "message": "Yeah, I know. A pretty unusual resume."
+        "message": "Yeah, I know. A pretty unconventional resume."
     },
     {
-        "message": "But great companies don't want to hire average professionals. So, why bother with average resumes?"
+        "message": "Well, great companies don't want to hire conventional professionals. So, why bother with copy-pasted templates?"
     },
     {
-        "message": "But don't worry, it's even more informative than the average resume."
+        "message": "But don't worry, this resume is even more informative than the ordinary ones."
     },
     {
         "message": "Ok then, let's give it a try. Can you start from your <strong>education</strong>?",
+        "id" : "education",
         "mine": true
     },
     {
@@ -43,6 +44,7 @@ const CONVERSATION = [
     },
     {
         "message": "Fine. What about your <strong>work experience</strong>?",
+        "id" : "work",
         "mine": true
     },
     {
@@ -94,6 +96,7 @@ const CONVERSATION = [
     },
     {
         "message": "Sounds interesting. Can we do deeper into your <strong>tech skills</strong>?",
+        "id" : "skills",
         "mine": true
     },
     {
@@ -115,6 +118,7 @@ const CONVERSATION = [
     },
     {
         "message": "Of course. Let's talk about yourself before. How would you describe <strong>your personality</strong>?",
+        "id" : "personality",
         "mine": true
     },
     {
@@ -150,6 +154,6 @@ const CONVERSATION = [
     },
     {
         "message": "Thanks for reading this! I look forward to hear from you."
-    },
+    }
 ];
 

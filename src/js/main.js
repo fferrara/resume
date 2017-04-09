@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     Typed.new(".my-job", {
         strings: ["computer scientist.", "developer.", 'researcher.', 'traveler.', 'nice guy.'],
         startDelay: 0,

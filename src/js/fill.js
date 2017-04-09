@@ -3,23 +3,23 @@
  */
 
 function createStars(message) {
-    let items = [];
+    var items = [];
 
-    for (let skill = 0; skill < message.stars.length; skill++){
-        let name = message.message[skill];
-        let count = message.stars[skill];
+    for (var skill = 0; skill < message.stars.length; skill++){
+        var name = message.message[skill];
+        var count = message.stars[skill];
 
-        let container = document.createElement('div');
+        var container = document.createElement('div');
         container.className = 'skill';
-        let star;
+        var star;
 
-        let label = document.createElement('span');
+        var label = document.createElement('span');
         label.className = 'stars-name';
         label.innerHTML = name;
         container.appendChild(label);
 
-        let intCount = Math.floor(count);
-        let i = 0;
+        var intCount = Math.floor(count);
+        var i = 0;
         for (;i < intCount;i++){
             star = document.createElement('label');
             star.setAttribute('id', 'star' + i);
@@ -39,19 +39,20 @@ function createStars(message) {
         items.push(container);
     }
 
-    return items.map(item => item.outerHTML).join('');
+    return items.map(function (item) {return item.outerHTML;}).join('');
 }
 
 function createList() {
-    let container = document.getElementsByClassName('chat-container')[0];
-    let ul=document.createElement('ul');
+    var container = document.getElementsByClassName('chat-container')[0];
+    var ul=document.createElement('ul');
     ul.setAttribute('class', 'container');
 
     CONVERSATION.forEach(function (message){
-        let li = document.createElement('li');
+        var li = document.createElement('li');
         li.setAttribute('class', 'message-container');
-        let p = document.createElement('p');
+        var p = document.createElement('p');
         p.setAttribute('class', 'message');
+        if (message.id) p.setAttribute('id', message.id);
 
         if (message.stars){
             p.setAttribute('class', 'message stars');

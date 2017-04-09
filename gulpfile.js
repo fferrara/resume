@@ -137,6 +137,7 @@ gulp.task('copy:misc', function () {
 gulp.task('bower_components', function () {
     return gulp.src([
         'bower_components/typed.js/dist/typed.min.js',
+        'bower_components/smooth-scroll/dist/js/smooth-scroll.min.js',
     ])
         .pipe(gulp.dest(dirs.dist + '/js/vendor/'));
 });
@@ -155,6 +156,7 @@ gulp.task('lint:js', function () {
 gulp.task('index', function () {
     gulp.src(dirs.src + '/index.html')
         .pipe(plugins.replace('../bower_components/typed.js/dist/', 'js/vendor/'))
+        .pipe(plugins.replace('../bower_components/smooth-scroll/dist/js/', 'js/vendor/'))
         .pipe(plugins.replace(/href=".*bootstrap.*css"/g, 'href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"'))
         .pipe(plugins.replace(/href=".*font-awesome.*css"/g, 'href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"'))
         .pipe(plugins.replace(/href=".*normalize.*css"/g, 'href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css"'))

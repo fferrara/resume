@@ -23,7 +23,7 @@
         <![endif]-->
 
         <div class="container header">
-            <div class="row">
+            <div class="row form-group">
                 <div class="col-sm-6 col-xs-12  text-center">
                     <div class="form-group">
                     <img class="img-circle my-picture"
@@ -59,6 +59,12 @@
                     </ul>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-3 shortcut"><a data-scroll href="#education">Education</a></div>
+                <div class="col-xs-3 shortcut"><a data-scroll href="#work">Work experience</a></div>
+                <div class="col-xs-3 shortcut"><a data-scroll href="#skills">Skills</a></div>
+                <div class="col-xs-3 shortcut"><a data-scroll href="#personality">Personality</a></div>
+            </div>
         </div>
 
         <div class="container-fluid chat-container">
@@ -66,10 +72,15 @@
         </div>
 
         <script src="../bower_components/typed.js/dist/typed.min.js"></script>
+        <script src="../bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/conversation.js"></script>
         <script src="js/fill.js"></script>
+
+        <script>
+            smoothScroll.init();
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
