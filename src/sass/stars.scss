@@ -31,10 +31,18 @@ Credits to James Barnett https://codepen.io/jamesbarnett
                 display: inline-block;
                 content: "\f005";
             }
+
+            @media (max-width: 768px){
+                font-size: .8em;
+            }
         }
 
         > .half:before {
             content: "\f089";
+        }
+
+        @media (max-width: 768px){
+            padding: 0;
         }
     }
 }

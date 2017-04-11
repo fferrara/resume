@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto:400,400i,700,900");
 .header {
   font-family: 'Raleway', sans-serif;
-  padding: 20px; }
+  padding-top: 20px; }
+  @media (max-width: 768px) {
+    .header {
+      font-size: .9em; } }
   .header ul > li {
     border: 0; }
   .header .list-group {
@@ -66,6 +69,11 @@
   background-color: #F4F4F4;
   padding-top: 25px; }
 
+@media (max-width: 768px) {
+  .chat-container {
+    padding-left: 0;
+    padding-right: 0; } }
+
 ul {
   padding-left: 0; }
 
@@ -76,7 +84,6 @@ ul {
     background-color: #FFF;
     padding: 12px;
     display: inline-block;
-    max-width: 80%;
     position: relative;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 0 5px 0 5px; }
@@ -85,6 +92,9 @@ ul {
       float: right;
       color: white;
       font-style: italic; }
+    @media (min-width: 768px) {
+      .message-container p.message {
+        max-width: 80%; } }
 
 .emoji {
   width: 20px; }
@@ -124,8 +134,14 @@ Credits to James Barnett https://codepen.io/jamesbarnett
       font-family: FontAwesome;
       display: inline-block;
       content: "\f005"; }
+    @media (max-width: 768px) {
+      .stars > .skill > label {
+        font-size: .8em; } }
   .stars > .skill > .half:before {
     content: "\f089"; }
+  @media (max-width: 768px) {
+    .stars > .skill {
+      padding: 0; } }
 
 body {
   font-family: 'Roboto', sans-serif; }

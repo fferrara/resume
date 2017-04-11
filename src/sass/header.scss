@@ -1,7 +1,11 @@
 .header {
 
+    @media (max-width: 768px) {
+        font-size: .9em;
+    }
+
     font-family: 'Raleway', sans-serif;
-    padding: 20px;
+    padding-top: 20px;
 
     ul > li {
         border: 0;
