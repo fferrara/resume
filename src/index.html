@@ -22,19 +22,20 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container header">
-            <div class="row form-group">
-                <div class="col-sm-6 col-xs-12  text-center">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-xs-12 col-sm-4 header">
+                <div class="form-group text-center">
                     <div class="form-group">
-                    <img class="img-circle my-picture"
-                        src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAACDAAAAJDczZTM2Y2UyLTFhMzAtNGVlZC1hZWNmLTkyMDlhYWQyOGE1Mg.jpg">
+                        <img class="img-circle my-picture"
+                             src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAACDAAAAJDczZTM2Y2UyLTFhMzAtNGVlZC1hZWNmLTkyMDlhYWQyOGE1Mg.jpg">
                     </div>
                     <div class="form-group">
                         <h3 class="my-name">Flavio Ferrara</h3>
                         <h4 class="my-description">A <span class="my-job"></span></h4>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xs-12">
+                <div class="form-group">
                     <ul class="list-group">
                         <li class="list-group-item">
                             <i class="fa fa-envelope-o icon mail-icon"></i>
@@ -58,18 +59,22 @@
                         </li>
                     </ul>
                 </div>
+                <div class="form-group">
+                    <div class="col-xs-6 col-sm-12 shortcut"><a data-scroll href="#education">Education</a></div>
+                    <div class="col-xs-6 col-sm-12 shortcut "><a data-scroll href="#work">Work experience</a></div>
+                    <div class="col-xs-6 col-sm-12 shortcut "><a data-scroll href="#skills">Skills</a></div>
+                    <div class="col-xs-6 col-sm-12 shortcut "><a data-scroll href="#personality">Personality</a></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-3 shortcut form-group"><a data-scroll href="#education">Education</a></div>
-                <div class="col-xs-6 col-sm-3 shortcut form-group"><a data-scroll href="#work">Work experience</a></div>
-                <div class="col-xs-6 col-sm-3 shortcut form-group"><a data-scroll href="#skills">Skills</a></div>
-                <div class="col-xs-6 col-sm-3 shortcut form-group"><a data-scroll href="#personality">Personality</a></div>
+            <div class="col-xs-12 col-sm-8 col-sm-offset-4 chat-container">
+                <!--Messages dynamically loaded from conversation.js-->
+            </div>
             </div>
         </div>
 
-        <div class="container-fluid chat-container">
-            <!--Messages dynamically loaded from conversation.js-->
-        </div>
+
+
+
 
         <script src="../bower_components/typed.js/dist/typed.min.js"></script>
         <script src="../bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
@@ -89,7 +94,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-97396060-1','auto');ga('send','pageview');
         </script>
     </body>
 </html>

@@ -4,20 +4,20 @@
 
 const CONVERSATION = [
     {
-        "message": "Hey there! How are you going? Welcome to my resume!"
+        "message": "Hey there! How are you doing?"
+    },
+    {
+        "message": "I'm Flavio, and that's the first-of-its-kind <strong>conversational resume</strong>."
     },
     {
         "message": "What's that??",
         "mine": true
     },
     {
-        "message": "The first-of-its-kind <strong>conversational resume</strong>."
-    },
-    {
         "message": "Yeah, I know. A pretty unconventional resume."
     },
     {
-        "message": "Well, great companies don't want to hire conventional professionals. So, why bother with copy-pasted templates?"
+        "message": "Well, great companies don't want to hire ordinary professionals. So, why bother with copy-pasted templates?"
     },
     {
         "message": "But don't worry, this resume is even more informative than the ordinary ones."
@@ -83,19 +83,19 @@ const CONVERSATION = [
         "message": "I'm glad you asked! It has been an amazing journey."
     },
     {
-        "message": "First of all, solving interesting and non-trivial problems without supervision. I love to solve problems with great results!"
+        "message": "First of all, solving interesting and non-trivial problems without supervision. <b>I love to solve problems</b> with great results!"
     },
     {
-        "message": "Designing and building digital products, from the idea to the App Store. Working in a digital agency helps me to feed my creative side."
+        "message": "<b>Designing and building digital products</b>, from the idea aaall the way to the App Store. Working in a digital agency helped me to feed my creative side."
     },
     {
-        "message": "And leading a small team of young and smart devs to build a shared know-how."
+        "message": "And <b>leading</b> a small team of young and smart devs to build a shared know-how."
     },
     {
         "message": "Speaking of, I’m proud to report that I first introduce automated tests to them and, in 6 months, we went from zero to End-to-End testing!"
     },
     {
-        "message": "Sounds interesting. Can we do deeper into your <strong>tech skills</strong>?",
+        "message": "Sounds interesting. Can we go deeper into your <strong>tech skills</strong>?",
         "id" : "skills",
         "mine": true
     },
@@ -103,8 +103,8 @@ const CONVERSATION = [
         "message": "About that, since a picture is worth a thousand words:"
     },
     {
-        "message": ["Machine learning", "Software engineering", "Python", "Angular", "Java EE", "TDD", "DevOps"],
-        "stars": [4.5, 4.5, 4.5, 4.5, 4, 4, 4]
+        "message": ["Machine learning", "Software engineering", "Python", "Javascript", "Angular", "Java EE", "TDD", "DevOps"],
+        "stars": [4.5, 4.5, 4.5, 4.5, 4.5, 4, 4, 4]
     },
     {
         "message": "Less tech, still worthy:"
@@ -128,10 +128,13 @@ const CONVERSATION = [
         "message": "There is my analytical self (<em>I’m a computer scientist, after all</em>). I’m reasonable, logical, assertive and dedicated."
     },
     {
-        "message": "Then we have my creative side, which makes me curious, intuitive, different and friendly. <q>An open mind but not an empty head</q>"
+        "message": "Then we have my creative side, which makes me curious, intuitive, different and friendly. <q>An open mind is not an empty head</q>"
     },
     {
-        "message": "I take data-driven technical and business decision, while I trust my instinct and empathy when it comes to colleagues and end-users."
+        "message": "I take <b>data-driven technical and business decision</b>, while I trust my <b>instinct and empathy</b> when it comes to colleagues and end-users."
+    },
+    {
+        "message": "I run on challenges, rather than coffee. And value meaning, rather than money."
     },
     {
         "message": "Ok, right. Can you give some examples of what you learned during the last 6 months?",
@@ -143,17 +146,17 @@ const CONVERSATION = [
         "<a href='https://www.elastic.co/products/elasticsearch'>Elasticsearch and Kibana</a>, just to name the most exciting ones."
     },
     {
-        "message": "I've also studied gamification, interaction design... and spanish <img class='emoji' alt='wink' src='https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f609.png'>"
+        "message": "I've also studied Natural Language Processing, Gamification, Interaction design... and Spanish <img class='emoji' alt='wink' src='https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f609.png'>"
     },
     {
         "message": "That's all, I think. How can I get in touch with you?",
         "mine": true
     },
     {
-        "message": "Just drop me a line on <a href='javascript:void(0);' onclick='showEmail(this)'>this email</a> or contact me on <a href='https://www.linkedin.com/in/femferrara'>Linkedin</a>."
+        "message": "Thanks for reading this! I look forward to hear from you."
     },
     {
-        "message": "Thanks for reading this! I look forward to hear from you."
+        "message": "Just drop me a line on <a href='javascript:void(0);' onclick='showEmail(this)'>this email</a> or contact me on <a href='https://www.linkedin.com/in/femferrara'>Linkedin</a>."
     }
 ];
 

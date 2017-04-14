@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto:400,400i,700,900");
 .header {
+  position: fixed;
+  font-size: .8em;
   font-family: 'Raleway', sans-serif;
   padding-top: 20px; }
   @media (max-width: 768px) {
     .header {
-      font-size: .9em; } }
+      position: relative; } }
   .header ul > li {
     border: 0; }
   .header .list-group {
     margin-bottom: 0; }
+    .header .list-group .list-group-item {
+      padding: 5px 10px; }
 
 .my-picture {
   max-width: 100px; }
@@ -101,14 +105,19 @@ ul {
 
 .shortcut {
   text-align: center;
-  padding: 0 20px; }
+  padding: 0 20px;
+  margin-bottom: 5px; }
   .shortcut a {
     background-color: #25ABB0;
     display: block;
     border-radius: 20px;
     font-weight: bold;
     color: white;
-    padding: 5px 8px; }
+    padding: 5px 8px;
+    opacity: .6; }
+  .shortcut a:hover, .shortcut a:focus {
+    text-decoration: none;
+    opacity: 1; }
 
 /**
 Credits to James Barnett https://codepen.io/jamesbarnett

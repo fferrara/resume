@@ -45,7 +45,7 @@ function createStars(message) {
 function createList() {
     var container = document.getElementsByClassName('chat-container')[0];
     var ul=document.createElement('ul');
-    ul.setAttribute('class', 'container');
+    ul.setAttribute('class', 'list-group');
 
     CONVERSATION.forEach(function (message){
         var li = document.createElement('li');

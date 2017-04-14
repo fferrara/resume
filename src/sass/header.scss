@@ -1,7 +1,10 @@
 .header {
+    position: fixed;
+    font-size: .8em;
 
     @media (max-width: 768px) {
-        font-size: .9em;
+
+        position: relative;
     }
 
     font-family: 'Raleway', sans-serif;
@@ -13,6 +16,10 @@
 
     .list-group {
         margin-bottom: 0;
+
+        .list-group-item {
+            padding: 5px 10px;
+        }
     }
 }
 

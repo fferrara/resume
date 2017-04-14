@@ -47,6 +47,7 @@ ul {
 .shortcut {
     text-align: center;
     padding: 0 20px;
+    margin-bottom: 5px;
 
     a {
         background-color: #25ABB0;
@@ -55,6 +56,12 @@ ul {
         font-weight: bold;
         color: white;
         padding: 5px 8px;
+        opacity: .6;
+    }
+
+    a:hover, a:focus {
+        text-decoration: none;
+        opacity: 1;
     }
 }
 
