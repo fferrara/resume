@@ -4,20 +4,23 @@
 
 const CONVERSATION = [
     {
-        "message": "Hey there! How are you doing?"
+        "message": "Hey there! It's great to have you here. How are you doing?"
     },
     {
-        "message": "I'm Flavio, and that's the first-of-its-kind <strong>conversational resume</strong>."
+        "message": "I'm Flavio, a creative software engineer."
     },
     {
         "message": "What's that??",
         "mine": true
     },
     {
-        "message": "Yeah, I know. A pretty unconventional resume."
+        "message": "Welcome to the my very own first-of-its-kind <strong>conversational resume</strong>."
     },
     {
-        "message": "Well, great companies don't want to hire ordinary professionals. So, why bother with copy-pasted templates?"
+        "message": "Yeah, I know. Pretty unconventional."
+    },
+    {
+        "message": "But great companies want to hire great professionals. So, why bother with copy-pasted templates?"
     },
     {
         "message": "But don't worry, this resume is even more informative than the ordinary ones."
